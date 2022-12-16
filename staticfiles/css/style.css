@@ -363,7 +363,6 @@ input[type=password]{
     .col{
 		display: block;
 		max-width:100%;
-		max-width: fit-content;
 	}
 	.column{
 		max-width:100%;
@@ -372,7 +371,8 @@ input[type=password]{
 		padding-top: 20px;
 	}
 	.col p{
-		width:100%;
+		max-width:100%;
+		color:orange;
 	}
 	.hero{
 		padding: 20px 4%;
