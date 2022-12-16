@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-22+*=u_()l%17^igfe1_*!@!7w@ss$i9qiv##2x+6z1#_&^#i2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -52,9 +52,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_COOKIE_SECURE=True
-
-CSRF_COOKIE_HTTPONLY=True
 
 ROOT_URLCONF = 'myproject.urls'
 
