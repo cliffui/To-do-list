@@ -362,10 +362,11 @@ input[type=password]{
 	}
     .col{
 		display: block;
-		width:100%;
+		max-width:100%;
+		max-width: fit-content;
 	}
 	.column{
-		max-width:100%;
+		width:100%;
 	}
 	.link{
 		padding-top: 20px;
