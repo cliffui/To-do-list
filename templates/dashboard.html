@@ -24,8 +24,10 @@
       {% for list in request.user.lists.all reversed %}
       <div class="column">
         <div class="col">
+        <div class="text1">
         <p>{{list.body}}:<strong>({{list.created_at}})</strong></p>
-        <div class="link">
+        </div>
+        <div class="text2">
         <a title="Edit List" href="{% url 'edit' list.id %}"><i class="fa-solid fa-pen"></i></a>
         <a title="Delete List" href="{% url 'delete' list.id %}"><i class="fa-solid fa-trash-can"></i></a>
         </div>

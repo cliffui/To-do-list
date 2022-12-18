@@ -83,28 +83,28 @@
 	height:470px;
 }
 .column{
-	background-color: antiquewhite;
-	margin: 20px 0px 0px 0px ;
-	width: 100%;
-	padding: 20px 30px ;
+	background-color:antiquewhite;
+	max-width: 100%;
+	padding: 10px 25px;
+	padding: 10px 2%;
+	margin:20px 0px 0px 0px;
 }
 .col{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width:100%;
+  display:flex;
+  padding: 10px 20px;
+  align-items:center;
+  justify-content: space-between;
 }
-.col p{
-	width:75%;
+.text1 {
+	width:800px;
 }
-
-.row::after{
-	content:"";
-	display: table;
-	clear: both;
+.text2 {
+	max-width: 60%;
+	margin-left: 230px;
+    display: flex;
 }
-.link i{
-	padding:10px 25px;
+.text2 a{
+  padding: 10px 25px;
 }
 .fa-solid.fa-trash-can{
 	color:red;
@@ -317,11 +317,23 @@ input[type=password]{
 	.alert{
 		margin-left: 50px;
 	}
+	.col{
+		display:block;
+	}
+	.text1{
+		max-width: 100%;
+	}
 	.hero1{
 		padding: 120px 20%;
 	}
 	.hero2{
 		padding:40px 4%;
+	}
+	.text1{
+		width:200%;
+	}
+	.text2{
+		margin-left:0px;
 	}
 	.hero3{
 		padding: 40px 8%;
@@ -357,12 +369,11 @@ input[type=password]{
 	.alert{
 		width:100%;
 	}
-	.reg2{
+	.text{
 		width:100%;
 	}
-    .col{
-		display: block;
-		max-width:100%;
+	.reg2{
+		width:100%;
 	}
 	.column{
 		max-width:100%;
@@ -371,8 +382,7 @@ input[type=password]{
 		padding-top: 20px;
 	}
 	.col p{
-		max-width:100%;
-		color:orange;
+		width:100%;
 	}
 	.hero{
 		padding: 20px 4%;
