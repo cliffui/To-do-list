@@ -283,6 +283,7 @@ input[type=password]{
 	background-color:#191919 ;
 	width:100%;
 	height:auto;
+	bottom:0;
 	padding:40px 15%;
 	position:fixed;
 }
