@@ -89,23 +89,30 @@
 	padding: 10px 2%;
 	margin:20px 0px 0px 0px;
 }
-.col{
-  display:flex;
-  padding: 10px 20px;
-  align-items:center;
-  justify-content: space-between;
+.col::after{
+   content:"";
+   clear:both;
+   display:table;
 }
-.text1 {
-	width:800px;
+.text{
+	width:50%;
+	float: left;
+	padding: 16px;
 }
-.text2 {
-	max-width: 60%;
-	margin-left: 230px;
-    display: flex;
+.text2{
+	width:600px;
+	display: block;
+	word-break: break-word;
 }
-.text2 a{
-  padding: 10px 25px;
+
+.text1 a{
+	padding:10px 25px;
 }
+.text1{
+	display: flex;
+	float: right;
+}
+
 .fa-solid.fa-trash-can{
 	color:red;
 	font-size: 20px;
@@ -277,6 +284,7 @@ input[type=password]{
 	width:100%;
 	height:auto;
 	padding:40px 15%;
+	position:fixed;
 }
 .center1{
 	padding:10px 25px;
@@ -317,11 +325,14 @@ input[type=password]{
 	.alert{
 		margin-left: 50px;
 	}
-	.col{
-		display:block;
+    .text{
+		width:50%;
+	}
+	.text2{
+		width: 450px;
 	}
 	.text1{
-		max-width: 100%;
+		float:right;
 	}
 	.hero1{
 		padding: 120px 20%;
@@ -329,12 +340,7 @@ input[type=password]{
 	.hero2{
 		padding:40px 4%;
 	}
-	.text1{
-		width:200%;
-	}
-	.text2{
-		margin-left:0px;
-	}
+
 	.hero3{
 		padding: 40px 8%;
 	}
@@ -369,11 +375,18 @@ input[type=password]{
 	.alert{
 		width:100%;
 	}
-	.text{
-		width:100%;
-	}
+	
 	.reg2{
 		width:100%;
+	}
+	.text2{
+		width:100%;
+	}
+   .text{
+    width: 100%;
+    }
+	.text1{
+		float: left;
 	}
 	.column{
 		max-width:100%;
